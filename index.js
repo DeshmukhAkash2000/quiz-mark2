@@ -1,0 +1,48 @@
+var readline=require("readline-sync")
+score=0
+
+
+
+var userName=readline.question("Enter your name ")
+console.log("hey ",userName,"\nplay this game and check your knowledge about international realtion")
+
+
+
+function play(question,answer){
+    var Answer=readline.question(question);
+    if (Answer.toUpperCase()===answer.toUpperCase()){
+        console.log('Right')
+        console.log("----------")
+        score+=1
+    }else{
+        console.log('Wrong')
+        console.log("----------")
+    }
+};
+
+
+
+var questi = [{
+  question: "Who is father of Realism. \n1. kissinger \n2. Biden \n3. morgenthau \n4. modi  \n",
+  answer: '3'
+}, {
+  question: "when was treaty of westphalia happened . \n1. 1648  \n2. 1857  \n3. 1950  \n4. 2000\n",
+  answer: '1'
+}, {
+  question: "who is writer of on way india. \n1. jayashankar \n2. dobhal  \n3. modi  \n4.shushma \n",
+  answer: '1'
+}, {
+  question: "how many countries has veto power in united nation. \n1. 5 \n2. 6 \n3. 7 \n4.8 \n ",
+  answer: "1"
+}];
+
+// Use Loop for call function
+
+for (var i=0;i<questi.length;i++){
+    var queslist=questi[i]
+    play(queslist.question,queslist.answer)
+};
+
+// For Print Output
+
+console.log(userName,"Your final Score is ",score)
