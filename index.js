@@ -34,7 +34,11 @@ var questi = [{
 }, {
   question: "how many countries has veto power in united nation. \n1. 5 \n2. 6 \n3. 7 \n4.8 \n ",
   answer: "1"
-}];
+},{
+  question: "when was second world war started? \n1.1930 \n2.1939 \n3.1945 \n4.1950 \n",
+  answer:"2"
+}
+];
 
 // Use Loop for call function
 
